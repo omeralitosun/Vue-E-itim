@@ -2,8 +2,9 @@
   <div>
     <nav>
     <router-link :to="{name:'home'}">Home</router-link> |
-    <router-link :to="{path:'/about'}">About</router-link>
-  </nav>
+    <router-link :to="{path:'/about'}">About</router-link> |
+    <router-link :to="{name:'students'}">Students</router-link>
+    </nav>
   <router-view/>
   </div>
 </template>
