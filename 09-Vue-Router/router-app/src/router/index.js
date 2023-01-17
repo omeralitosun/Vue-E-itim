@@ -23,7 +23,8 @@ const routes = [
   {
     path: '/students/:id',
     name: 'studentsInfo',
-    component: () => import('../views/StudentInfo.vue')
+    component: () => import('../views/StudentInfo.vue'),
+    props:true
   }
 ]
 
