@@ -1,0 +1,28 @@
+{
+    "project": [
+        {
+            "id":1,
+            "title": "Deneme1",
+            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+            "complete": true
+        },
+        {
+            "id":2,
+            "title": "Deneme 2",
+            "details": "Lorem Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+            "complete": false
+        },
+        {
+            "id":3,
+            "title": "Deneme 3",
+            "details": "text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+            "complete": true
+        },
+        {
+            "id":4,
+            "title": "Deneme 4",
+            "details": "Lorem printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+            "complete": false
+        }
+    ]
+}
