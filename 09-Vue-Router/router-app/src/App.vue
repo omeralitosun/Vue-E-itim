@@ -5,9 +5,30 @@
     <router-link :to="{path:'/about'}">About</router-link> |
     <router-link :to="{name:'students'}">Students</router-link>
     </nav>
+    <div>
+      <span @click="anasayfa">Anasayfa</span>
+      <span @click="geri">Geri</span>
+      <span @click="ileri">İleri</span>
+    </div>
   <router-view/>
   </div>
 </template>
+
+<script>
+  export default{
+    methods: {
+      anasayfa(){
+        this.$router.push({name:"home"})
+      },
+      geri(){
+        this.$router.go(-1)
+      },
+      ileri(){
+        this.$router.go(1)
+      }
+    },
+  }
+</script>
 
 <style>
 #app {
@@ -29,5 +50,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+span{
+  padding: 20px 10px;
 }
 </style>
