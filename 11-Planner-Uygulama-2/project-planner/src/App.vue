@@ -1,17 +1,15 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/add">About</router-link>
-    </nav>
+    <Navbar/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Navbar from "./components/Navbar.vue";
 export default{
   components:{
-
+    Navbar
   }
 }
 </script>
