@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar/>
-    <router-view/>
+    <router-view @themeChange="changeTheme($event)"/>
   </div>
 </template>
 
@@ -10,6 +10,18 @@ import Navbar from "./components/Navbar.vue";
 export default{
   components:{
     Navbar
+  },
+  data() {
+    return {
+      darkTheme:false,
+    }
+  },
+  methods:{
+    changeTheme(e){
+      if(e){
+        
+      }
+    }
   }
 }
 </script>

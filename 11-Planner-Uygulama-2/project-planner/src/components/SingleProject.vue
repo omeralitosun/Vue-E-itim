@@ -1,5 +1,5 @@
 <template>
-    <div class="project" :class="{complete: project.complete}">
+    <div class="project" :class="{complete: project.complete,dark: darkTheme}">
         <div class="actions">
             <h3 @click="showDetails = !showDetails">{{ project.title }}</h3>
             <div class="icons">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    props: ['project'],
+    props: ['project','darkTheme'],
     data() {
         return {
             showDetails: false,
@@ -38,7 +38,8 @@ export default {
             .then(()=> this.$emit('complete', this.project.id))
             .catch(err => console.log(err))
         }
-    }
+    },
+
 }
 </script>
 
@@ -73,5 +74,8 @@ h3 {
 }
 .project.complete .tick{
     color: #76dd78;
+}
+.project.dark{
+    background: #777;
 }
 </style>
